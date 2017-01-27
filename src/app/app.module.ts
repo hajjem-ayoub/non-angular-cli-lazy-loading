@@ -4,6 +4,7 @@ import { appRouting } from './app.routing';
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
+import {AlertModule, AlertConfig} from "ng2-bootstrap/index";
 import "rxjs";
 
 @NgModule({
@@ -14,8 +15,10 @@ import "rxjs";
     appRouting,
     BrowserModule,
     FormsModule,
+    AlertModule,
     HttpModule
   ],
+  providers:[AlertConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
